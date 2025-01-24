@@ -16,17 +16,26 @@ export const Task = () => {
 
   const dispatch = useAppDispatch();
 
-  const setExample = () => {
+//  const setExample = () => {
+//    setResearch(
+//      "Can you find the latest camping trends and what folks are doing in the winter?"
+//    );
+//    setProducts("Can you use a selection of tents and sleeping bags as context?");
+//    setWriting(
+//      "Write a fun and engaging article that includes the research and product information. The article should be between 800 and 1000 words. Make sure to cite sources in the article as you mention the research not at the end."
+//    );
+//  };
+
+const setExample = () => {
     setResearch(
-      "Can you find the latest camping trends and what folks are doing in the winter?"
+      "Can you find the latest reasons why one should choose to work for a government organization instead of private sector, especially the benefits of working for the City of Seattle local government? Research minimum education and experience qualifications for the role."
     );
-    setProducts("Can you use a selection of tents and sleeping bags as context?");
+    setProducts("Can you use Government Affairs Manager?");
     setWriting(
-      "Write a fun and engaging article that includes the research and product information. The article should be between 800 and 1000 words. Make sure to cite sources in the article as you mention the research not at the end."
+      "Write a job announcement for Government affairs manager at the City of Seattle. Include the job description and salary range. Mention the benefits of living in Seattle and the surrounding area. Include relevant LinkedIn pages and social media posts about working for the City of Seattle. Make sure to cite sources in the article as you mention the research not at the end."
     );
   };
-
-
+  
   const reset = () => {
     setResearch("");
     setProducts("");
@@ -88,13 +97,13 @@ export const Task = () => {
 
       <div className="text-start mt-3">
         <label
-          htmlFor="products"
+          htmlFor="Productss"
           className="block text-sm font-medium leading-6 text-gray-900"
         >
-          Products
+          Job Types
         </label>
         <p className="mt-1 text-sm leading-6 text-gray-400">
-          What products should I look at?
+          What types of jobs should I look at?
         </p>
         <div className="mt-2">
           <textarea
